@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora HTML</title>
+    <script src="./index.js" defer></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calculadora HTML</h1>
+    <form action="" method="dialog"> <!-- method = se coloca para no recargar la pagina -->
+        <input type="text" id="op1" placeholder="Operador 1">
+        <input type="text" id="operacion" placeholder="+, -, *, / ">
+        <input type="text" id="op2" placeholder="Operador 2">
+
+        <input type="submit" value="Calcular" id="calcular">
+        <!--se puede colocar onclick=calcular() en html ou tambien en js usando addEventListener-->
+    </form>
+    <!--se puede colocar el form para poder dar enter en vez de hacer click en el boton-->
+    <p id="resultado"></p>
+</body>
+
+</html>
