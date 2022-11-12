@@ -33,7 +33,7 @@ function calcular() {
             //break = se usa para evitar que todas las operaciones se ejecuten al mismo tiempo
         }
         pResultado.style = 'color:black'
-        pResultado.innerText = '=' + resultado //valor declarado.innerText = 'texto qualquer' *esto se usa para mostrar el texto en la web y no en la consola
+        pResultado.innerText = `= ${resultado}` //valor declarado.innerText = 'texto qualquer' *esto se usa para mostrar el texto en la web y no en la consola
     } else {
         pResultado.style = 'color:red'
         pResultado.innerText = 'calculo imposible'
